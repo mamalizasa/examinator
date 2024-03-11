@@ -1,0 +1,125 @@
+@import url('/css/fonts.css');
+* {
+    padding: 0;
+    margin: 0;
+}
+p {
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 24px;
+}
+
+
+h1 {
+    font-family: "Helvetica";
+}
+
+.logo {
+    font-family: "Helvetica";
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.logo:hover {
+    color: #f75bda !important;
+    transition: .15s;
+}
+
+.navbar-toggler {
+    border: 0 !important;
+}
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+.shapka {
+    font-family: "Helvetica" !important;
+    background-color: #0be6ea;
+    font-size: 22px;
+}
+
+.dropdown-menu {
+    background-color: #0be6ea;
+    border: 0px !important;
+    border-radius: 0 !important;
+    font-size: 22px;
+    transition: .15s;
+}
+
+.glav {
+    width: auto !important;
+    height: auto !important;
+    background-image: url('/photos/losangel.jpg') !important;
+    background-position: center center;  
+    background-attachment: fixed;   
+    background: no-repeat;
+    background-size: cover;  
+}
+
+.welcomet {
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 32px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+h2 {
+    font-family: "Helvetica" !important;
+}
+
+/* Main */
+
+.anali {
+    border-left: 2px solid #f75bda !important;
+    padding-left: 2%;
+}
+
+.repi {
+    border: none;
+    box-shadow: 2px 6px 4px 3px #03595c6d;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+input {
+    color:#020b18;
+    border-color: none !important;
+    border: 2px solid #0be6ea !important;
+    font-family: "Open Sans", sans-serif !important;
+    width: 50%;
+}
+
+textarea {
+    color:#020b18;
+    border-color: none !important;
+    border: 2px solid #0be6ea !important;
+    font-family: "Open Sans", sans-serif !important;
+    width: 50%;
+}
+input.btn {
+    border: none !important;
+    background-color: #0be6ea !important;
+}
+.listik {
+    border-bottom: 1px solid #0be6ea !important;
+    font-family: "Open Sans", sans-serif !important;
+}
+/* Main off */
+
+
+
+
+
+@media screen and (max-width: 391px) {
+    .welcomet {
+        font-size: 24px !important;
+    }
+    input.btn {
+        width: 85% !important;
+    }
+    input {
+        width: 85% !important;
+    }
+    textarea {
+        width: 85% !important;
+    }
+}
