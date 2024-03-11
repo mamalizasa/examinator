@@ -6,19 +6,18 @@
     <title>Новости Волхова - самые свежие и непредвзятые! 17 марта, полдень</title>
     <!-- Подключение CSS файла bootstrap 5 -->
     <link href="/bootstrapno/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/bootstrapno/bootstrap-icons/arrow-right.svg" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="navbar shapka navbar-expand-lg mx-auto">
+        <nav class="navbar shapka navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand logo text-white" href="index.html">VolkhovNews</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
                   <li class="nav-item pe-5">
                     <a class="nav-link active" aria-current="page" href="#">Новости</a>
                   </li>
@@ -29,7 +28,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Форум</a>
                   </li>
                   <li class="nav-item pe-5">
-                    <a class="nav-link active" aria-current="page" href="#">Вход</a>
+                    <a class="nav-link active" aria-current="page" href="createacc.html">Личный кабинет</a>
                   </li>
 
                   <li class="nav-item dropdown pe-5">
@@ -90,12 +89,12 @@
                     <div class="reporter fw-lighter fst-italic p-2 ps-0">Писатель Эмили Блант, 10.03.2024</div>
                     <div class="fs-4 anali mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, animi sit corrupti neque placeat, eos expedita eius, rem sint voluptatem laboriosam culpa. Sapiente, recusandae ullam! Non quibusdam eveniet at consectetur.
                     Reiciendis, ducimus! Magni earum molestiae tempora quae culpa voluptatem modi, tenetur fuga quia nihil veritatis sequi accusamus! Corrupti rem, ab mollitia fuga, repudiandae excepturi alias id perspiciatis velit dolorem suscipit.</div>
-                    <a href="analitics.html" class="btn border-info fs-lg-5 float-end mb-3">Подробнее</a>
+                    <a href="analitics.html" class="btn border-info fs-lg-5 text-end">Подробнее</a>
                 </div>
             </section>
             <section>
               <div class="container">
-                <h2 id="reports" class="p-2 mt-5 ps-0 text-center">Репортажи и интервью</h2>
+                <h2 id="reports" class="p-2 mt-2 ps-0 text-center">Репортажи и интервью</h2>
                 <div class="reporter fw-lighter fst-italic p-2 ps-0">Репортёр Андреа Сакс, 11.03.2024</div>
                 <div class="fs-4 repi mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, animi sit corrupti neque placeat, eos expedita eius, rem sint voluptatem laboriosam culpa. Sapiente, recusandae ullam! Non quibusdam eveniet at consectetur.
                 Reiciendis, ducimus! Magni earum molestiae tempora quae culpa voluptatem modi, tenetur fuga quia nihil veritatis sequi accusamus! Corrupti rem, ab mollitia fuga, repudiandae excepturi alias id perspiciatis velit dolorem suscipit.
@@ -106,10 +105,10 @@
             <section>
               <div class="container">
                 <h2 id="opinions" class="p-2 mt-3 ps-0 text-center">Что вы думаете?</h2>
-                <div class="fs-5 fw-lighter">Поделитесь вашим мнением по поводу актуальных событий, и, если вы зарегистрированы, мы опубликуем его в <a class="svoyalink" href="forum.html">общий доступ<img src="bootstrapno/bootstrap-icons/arrow-right.svg" class="bi icon-link" width="24" height="24" fill="currentColor" alt="Bootstrap"></a></div>
+                <div class="fs-5 fw-lighter">Поделитесь вашим мнением по поводу актуальных событий, и, если вы зарегистрированы, мы опубликуем его в <a class="svoyalink" href="forum.html">общий доступ</a></div>
                 <form method="post" class="text-center">
-                  <input type="text" name="name" id="username" class=" m-2 p-2" placeholder="Напишите ваше имя*"><br>
-                  <textarea name="message" id="msg" class=" m-2 p-2" rows="5" placeholder="Не забывайте соблюдать правила приличия, и не нарушайте законы. Оскорбления, мат и спам запрещены."></textarea><br>
+                  <input type="text" name="name" id="username" class=" m-2 p-2" pattern="^[a-zA-Z]{1,25}$" required placeholder="Напишите ваше имя*"><br>
+                  <textarea name="message" pattern="^[а-яА-Я\-]+$" required id="msg" class=" m-2 p-2" rows="5" placeholder="Не забывайте соблюдать правила приличия, и не нарушайте законы. Оскорбления, мат и спам запрещены."></textarea><br>
                   <input type="submit" value="Отправить" class="p-2 btn text-white fs-4 m-2 w-25">
                 </form>
               </div>
@@ -130,6 +129,43 @@
 
 
     </main>
+
+    <footer>
+      <nav class="footer">
+        <div class="container-fluid">
+          <div class="grid">
+            <div class="grid-item">
+              <a class="logo text-white pe-5"  href="index.html">VolkhovNews</a>
+            </div>
+            <div class="grid-item">
+              <ul class=" mb-2">
+                <li class="nav-item pe-5">
+                  <a class="nav-link active" aria-current="page" href="#">Новости</a>
+                </li>
+                <li class="nav-item pe-5">
+                  <a class="nav-link active" aria-current="page" href="#">Репортажи</a>
+                </li>
+                <li class="nav-item pe-5">
+                  <a class="nav-link active" aria-current="page" href="#">Форум</a>
+                </li>
+                <li class="nav-item pe-5">
+                  <a class="nav-link active" aria-current="page" href="#">Личный кабинет</a>
+                </li>
+              </ul>
+            </div>
+            <div class="grid-item">
+              <ul >
+                <li style="cursor: pointer;">Политика конфиденциальности</li>
+                <li style="cursor: pointer;">Задайте вопрос</li>
+                <li style="cursor: pointer;">Вакансии</li>
+                <li style="cursor: pointer;">volkhovnews@mail.ru</li>
+              </ul>
+            </div>
+          </div>
+          
+
+      </nav>
+    </footer>
 
     
 

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Новости Волхова - самые свежие и непредвзятые! 17 марта, полдень</title>
+    <link href="bootstrapno/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/forms.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar shapka navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand logo text-white" href="index.html">VolkhovNews</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                  <li class="nav-item pe-5">
+                    <a class="nav-link active" aria-current="page" href="#">Новости</a>
+                  </li>
+                  <li class="nav-item pe-5">
+                    <a class="nav-link active" aria-current="page" href="#">Репортажи</a>
+                  </li>
+                  <li class="nav-item pe-5">
+                    <a class="nav-link active" aria-current="page" href="#">Форум</a>
+                  </li>
+                  <li class="nav-item pe-5">
+                    <a class="nav-link active" aria-current="page" href="createacc.html">Личный кабинет</a>
+                  </li>
+
+                  <li class="nav-item dropdown pe-5">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Главное
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#news">Новости</a></li>
+                      <li><a class="dropdown-item" href="#analys">Аналитика</a></li>
+                      <li><a class="dropdown-item" href="#reports">Репортажи</a></li>
+                      <li><a class="dropdown-item" href="#opinions">Мнения</a></li>
+                      <li><a class="dropdown-item" href="#sociallinks">Соцсети</a></li>
+                    </ul>
+                  </li>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <h2 class="text-center p-3 mb-5">Вход</h2>
+            <form class="row g-3 mt-5">
+
+                <div class="col-12">
+                  <label for="validationDefaultUsername" class="form-label">Никнейм</label>
+                  <input type="text" class="form-control" id="validationDefaultUsername" pattern="^[a-zA-Z]{1,25}$" aria-describedby="inputGroupPrepend2" placeholder="ЧестныйЧел" required>
+                </div>
+
+
+                <div class="col-12">
+                    <label for="validationDefault02" class="form-label">Пароль</label>
+                    <input type="password" class="form-control" pattern="^[a-zA-Z]{8,25}$" id="validationDefault04" required>
+                </div>
+
+                
+                <div class="col-12">
+                  <button class="btn btn-info mb-4 text-white" type="submit">Войти</button>
+                </div>
+                <div class="fs-4 form-text mb-4">
+                    Нет аккаунта? <a href="createacc.html">Зарегистрироваться</a>
+                  </div>
+              </form>
+        </div>
+
+    </main>
+
+    <!-- <footer>
+      <nav class="footer">
+        <div class="container-fluid">
+          <div class="grid">
+            <div class="grid-item">
+              <a class="logo text-white pe-5"  href="index.html">VolkhovNews</a>
+            </div>
+            <div class="grid-item">
+              <ul class=" mb-2">
+                <li class="nav-item pe-5">
+                  <a class="nav-link active" aria-current="page" href="#">Новости</a>
+                </li>
+                <li class="nav-item pe-5">
+                  <a class="nav-link active" aria-current="page" href="#">Репортажи</a>
+                </li>
+                <li class="nav-item pe-5">
+                  <a class="nav-link active" aria-current="page" href="#">Форум</a>
+                </li>
+                <li class="nav-item pe-5">
+                  <a class="nav-link active" aria-current="page" href="#">Личный кабинет</a>
+                </li>
+              </ul>
+            </div>
+            <div class="grid-item">
+              <ul >
+                <li style="cursor: pointer;">Политика конфиденциальности</li>
+                <li style="cursor: pointer;">Задайте вопрос</li>
+                <li style="cursor: pointer;">Вакансии</li>
+                <li style="cursor: pointer;">volkhovnews@mail.ru</li>
+              </ul>
+            </div>
+          </div>
+          
+
+      </nav>
+    </footer> -->
+
+    
+
+    <!-- Подключение JS файла Bootstrap -->
+    <script src="/script/jquery.js"></script>
+    <script src="/bootstrapno/js/bootstrap.bundle.min.js" ></script></body>
+</html>
