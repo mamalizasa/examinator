@@ -7,6 +7,7 @@
     <!-- Подключение CSS файла bootstrap 5 -->
     <link href="bootstrapno/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/forms.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -51,64 +52,67 @@
     <main>
 
         <div class="container">
-            <h2 class="text-center p-3">Регистрация</h2>
-            <form class="row g-3">
+            <h2 class="text-center p-3 mb-0 pb-1">Регистрация</h2>
+       
+            <div class="text-center fs-4 text-warning pt-0" id="message_success"></div>
+            <form class="row g-3" id="form" method="post" action="form.js">
                 <div class="col-12">
-                  <label for="validationDefault01" class="form-label">Ваше имя<span class="text-danger">*</span></label>
-                  <input type="text" class="form-control" id="validationDefault01" pattern="^[а-яА-Я\-]+$" placeholder="Алексей" required> 
+                  <label for="name_input" class="form-label">Ваше имя<span class="text-danger">*</span></label>
+                  <input type="text" id="name_input" class="name_input form-control" pattern="^[а-яА-Я\-]+$" placeholder="Алексей" > 
                   <div id="passwordHelpBlock" class="form-text">
                     Напишите имя на русском языке без пробелов
                   </div>
                 </div> 
 
                 <div class="col-12">
-                  <label for="validationDefaultUsername" class="form-label">Никнейм<span class="text-danger">*</span></label>
-                  <input type="text" class="form-control" id="validationDefaultUsername" pattern="^[a-zA-Z]{1,25}$" aria-describedby="inputGroupPrepend2" placeholder="ЧестныйЧел" required>
+                  <label for="username_input" class="form-label">Никнейм<span class="text-danger">*</span></label>
+                  <input type="text" id="username_input" class="username_input form-control" pattern="^[a-zA-Z]{1,25}$" aria-describedby="inputGroupPrepend2" placeholder="TrueGuy">
                   <div id="passwordHelpBlock" class="form-text">
                     Напишите никнейм на английском языке от двух до 25 символов длинной, без специальных знаков
                   </div>
                 </div>
 
                 <div class="col-12">
-                    <label for="validationDefault02" class="form-label">Ваша почта<span class="text-danger">*</span></label>
-                    <input type="email" class="form-control" id="validationDefault02" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="mail@example.com" required>
+                    <label for="email_input" class="form-label">Ваша почта<span class="text-danger">*</span></label>
+                    <input type="email" id="email_input" class="email_input form-control" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="mail@example.com">
                     <div id="passwordHelpBlock" class="form-text">
                         Напишите почту на английском языке через символ @ и точку
                       </div>
                 </div>
 
                 <div class="col-12">
-                    <label for="validationDefault02" class="form-label">Ваш номер телефона<span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="validationDefault03" placeholder="+7 900 895 65 78" required>
+                    <label for="phone_input" class="form-label">Ваш номер телефона<span class="text-danger">*</span></label>
+                    <input type="text" id="phone_input" class="phone_input form-control" placeholder="+7 900 895 65 78">
                     <div id="passwordHelpBlock" class="form-text">
                         Впишите номер телефона из 11 цифр
                       </div>
                 </div>
 
                 <div class="col-12">
-                    <label for="validationDefault02" class="form-label">Придумайте пароль<span class="text-danger">*</span></label>
-                    <input type="password" class="form-control" pattern="^[a-zA-Z]{8,25}$" id="validationDefault04" required>
+                    <label for="password_input" class="form-label">Придумайте пароль<span class="text-danger">*</span></label>
+                    <input type="password" id="password_input" class="password_input form-control" pattern="^[a-zA-Z]{8,25}$" >
                     <div id="passwordHelpBlock" class="form-text">
                         Придумайте пароль, состоящий из латинский букв, от 8 до 25 знаков
                       </div>
                 </div>
 
                 <div class="col-12">
-                    <label for="validationDefault02" class="form-label">Повторите пароль<span class="text-danger">*</span></label>
-                    <input type="password" class="form-control" pattern="^[a-zA-Z]{1,25}$" id="validationDefault05" required>
+                    <label for="passwordrepeat_input" class="passwordrepeat_input form-label">Повторите пароль<span class="text-danger">*</span></label>
+                    <input type="password" id="passwordrepeat_input" class="passwordrepeat_input form-control" pattern="^[a-zA-Z]{1,25}$" >
                 </div>
                 
                 <div class="col-12">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <input class="form-check-input" type="checkbox" id="invalidCheck" >
                     <label class="form-check-label" for="invalidCheck2">
                         Согласен(-на) с положениями и условиями
                     </label>
                   </div>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-info mb-4 text-white" type="submit">Зарегистрироваться</button>
+                  <button class="btn btn-info mb-1 text-white"  type="submit">Зарегистрироваться</button>
                 </div>
+                <div class="fs-4 text-warning pt-0"   id="message"></div>
                 <div class="fs-4 form-text mb-4">
                     Есть аккаунт? <a href="login.html">Войти</a>
                   </div>
@@ -157,6 +161,8 @@
     
 
     <!-- Подключение JS файла Bootstrap -->
-    <script src="/script/jquery.js"></script>
-    <script src="/bootstrapno/js/bootstrap.bundle.min.js" ></script></body>
+    <script src="script/jquery.js"></script>
+    <script src="script/form.js"></script>
+
+    <script src="bootstrapno/js/bootstrap.bundle.min.js" ></script></body>
 </html>
